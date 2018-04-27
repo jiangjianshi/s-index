@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GBK"?>
+<configuration scan="true" scanPeriod="30 seconds">
+	<property name="LogPath" value="./log" />
+	<contextName>${LogPath}</contextName>
+	<appender name="debug"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<Encoding>UTF-8</Encoding>
+		<file>${LogPath}/info/index.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        	<FileNamePattern>${LogPath}/info/index.log.%d{yyyyMMddHH}</FileNamePattern>
+        </rollingPolicy>
+		<encoder>
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss} [%c] - %m :%L%n</Pattern>
+		</encoder>
+	</appender>
+	<appender name="warn"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+	      <level>WARN</level>
+	      <onMatch>ACCEPT</onMatch>
+	      <onMismatch>DENY</onMismatch>
+	    </filter>
+		<Encoding>UTF-8</Encoding>
+		<file>${LogPath}/warn/index.log.warn</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        	<FileNamePattern>${LogPath}/warn/index.log.warn.%d{yyyyMMddHH}</FileNamePattern>
+        </rollingPolicy>
+		<encoder>
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss} [%c] - %m :%L%n</Pattern>
+		</encoder>
+	</appender>
+	<appender name="error"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+	      <level>ERROR</level>
+	      <onMatch>ACCEPT</onMatch>
+	      <onMismatch>DENY</onMismatch>
+	    </filter>
+		<Encoding>UTF-8</Encoding>
+		<file>${LogPath}/error/index.log.err</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        	<FileNamePattern>${LogPath}/error/index.log.err.%d{yyyyMMddHH}</FileNamePattern>
+        </rollingPolicy>
+		<encoder>
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss} [%c] - %m :%L%n</Pattern>
+		</encoder>
+	</appender>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%c][%-5level]%L - %m%n</pattern>
+		</layout>
+	</appender>
+	<logger name="org.quartz" level="error"/>
+	<root level="debug">
+		<appender-ref ref="debug" />
+		<appender-ref ref="info" />
+		<appender-ref ref="warn" />
+		<appender-ref ref="error" />
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Config>
+	<getFieldsFromDB>false</getFieldsFromDB>
+	<analyzer_version>standard</analyzer_version>
+	<logConfig>./config/logback.xml</logConfig>
+	<location></location>
+	
+	
+	<iplist>127.0.0.1</iplist>
+	
+
+	
+	<getPathUrl><![CDATA[http://{ip}:12008/search/indexmanager?action=1&store={store}]]></getPathUrl>
+	<reloadUrl><![CDATA[http://{ip}:12008/search/indexmanager?action=2&store={store}]]></reloadUrl>
+	<dispatchCommand>/data/www/search-indexing/config/filesync.sh {ip} {orig} {dest}</dispatchCommand>
+	
+	<index>
+		<index_struct>select * from db_huizhaofang_platform.index_struct</index_struct>
+	</index>
+	
+
+	
+	<jdbc>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<url>jdbc:mysql://rm-2ze96704758roml73.mysql.rds.aliyuncs.com:3306/db_huizhaofang_platform?useUnicode=true&amp;characterEncoding=utf8
+			</url>
+			<username>hzf</username>
+			<password>hzf-2016</password>
+	</jdbc>
+	
+	
+	<ds>
+		<num>1</num>
+		<item>
+			<name>ds1</name>
+			<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+			<url>jdbc:mysql://rm-2ze96704758roml73.mysql.rds.aliyuncs.com:3306/db_huizhaofang_platform?useUnicode=true&amp;characterEncoding=utf8
+			</url>
+			<username>hzf</username>
+			<password>hzf-2016</password>
+		</item>
+	</ds>
+	
+	<fullIndex>
+		<indexPath>/data/www/index/</indexPath>
+		<dataGetterName>com.huifenqi.index.index.IndexDataGetter</dataGetterName>
+		<!-- 索引分发的实现类, 为空时不分发索引 -->
+		<dispatcher>com.huifenqi.index.dispatch.DispatchServiceImpl</dispatcher>
+		<typenum>2</typenum>
+		<item>
+			<name>house</name>
+			<limit_num>4000000</limit_num>
+			<ds_num>1</ds_num>
+			<ds>
+				<name>ds1</name>
+				<dataname>house</dataname>
+				<selectsql>select t.id ID\, t.f_house_sell_id\, CONCAT(hd.f_bizname\,'-'\,hd.f_community_name\,'-'\,hd.f_bedroom_nums\,'居') title\, t.f_is_sale\, t.f_status \, t.f_ext400\, t.f_house_comment\, t.f_can_checkin_date f_can_checkin_date\, t.f_can_checkin_date f_cc_date_str\, ifnull(t.f_rent_price_month\,0.0) f_rent_price_month\,IFNULL(t.f_rent_price_day\, 0) f_rent_price_day\, CASE t.f_rent_price_month WHEN 0.0 THEN 0 ELSE 1 END f_rent_price_zero\, ifnull(t.f_service_fee\,0.0) f_service_fee\, ifnull(t.f_deposit_fee\,0.0) f_deposit_fee\, ifnull(t.f_deposit_month\,0) f_deposit_month\, ifnull(t.f_period_month\,0) f_period_month\, t.f_agency_id\, t.f_company_id\, t.f_company_name\, t.f_agency_phone\, t.f_first_pub_date\, t.f_pub_date f_pub_date\, t.f_pub_date f_pub_date_str\, ifnull(t.f_has_key\,0) f_has_key\, t.f_creation_date\, t.f_last_change_date f_last_change_date\, t.f_last_change_date f_lc_date\, hd.f_building_no\, hd.f_unit_no\, hd.f_flow_no\, hd.f_flow_total\, hd.f_house_no\, ifnull(hd.f_area\,0.0) f_area\, hd.f_orientations\, case hd.f_orientations when '10001' then '东' when '10002' then '西' when '10003' then '南' when '10004' then '北' when '10023' then '西南' when '10024' then '西北' when '10014' then '东北' when '10013' then '东南' when '10034' then '南北' when '10012' then '东西' else '其他' end ori_name\, ifnull(hd.f_bedroom_nums\,0) f_bedroom_nums\, CONCAT(hd.f_bedroom_nums\,'居') f_bedroom_nums_name\, ifnull(hd.f_livingroom_nums\,0) f_livingroom_nums\, ifnull(hd.f_kitchen_nums\,0) f_kitchen_nums\, ifnull(hd.f_toilet_nums\,0) f_toilet_nums\, hd.f_province\, hd.f_city\, ifnull(hd.f_house_function\,0) f_house_function\, case hd.f_house_function when 1 then '居住' when 2 then '写字楼' when 3 then '商铺' else '其他' end  fun_name\, hd.f_is_top\, hd.f_approve_status\, hd.f_focus_code\, hd.f_house_type\, hd.f_district\, hd.f_bizname\, hd.f_address\, hd.f_subway\, hd.f_subway_distance\, hd.f_bus_stations\, hd.f_surround\, hd.f_community_name\, hd.f_building_name\, ifnull(hd.f_balcony_nums\,0) f_balcony_nums\, hd.f_baidu_lo\, hd.f_baidu_la\, ifnull(hd.f_building_type\,0) f_building_type\, hd.f_building_year\, ifnull(hd.f_toilet\,0) f_toilet\, ifnull(hd.f_balcony\,0) f_balcony\, ifnull(hd.f_insurance\,0) f_insurance\, ifnull(hd.f_decoration\,0) f_decoration\, case hd.f_decoration when 1 then '精装' when 2 then '简装' when 3 then '毛坯' when 4 then '老旧' when 5 then '豪装' when 6 then '中装' when 7 then '普装' else '其他' end dec_name\, ifnull(hd.f_entire_rent\,0) f_entire_rent\, case hd.f_entire_rent when 0 then '合租' when 1 then '整租' when 2 then '整分皆可' else '其他' end rent_name\, hd.f_comment\, hd.f_house_tag\, hd.f_source\, hd.f_city_id\, hd.f_district_id\, hd.f_biz_id\, hd.f_subway_line_id\, hd.f_subway_station_id\, hd.f_is_pay_month\, hd.f_pub_type\, CONCAT_WS('\,'\,CAST(IFNULL(hd.f_baidu_lo\,0.0) AS CHAR)\,CAST(IFNULL(hd.f_baidu_la\,0.0) AS CHAR)) Google\, ifnull(hd.f_building_year\,0) f_building_year  from t_house_base t left join t_house_detail hd on hd.f_house_sell_id=t.f_house_sell_id where t.f_is_delete=0</selectsql>
+				  <maxidsql>select count(*) from t_house_base t left join t_house_detail hd on hd.f_house_sell_id=t.f_house_sell_id where t.f_is_delete=0 </maxidsql>
+				 <picsql>select hp.f_house_sell_id\, hp.f_room_id\, hp.f_pic_root_path\, hp.f_pic_web_path from t_house_pics hp where  hp.f_is_delete=0 and hp.f_room_id=0 and f_pic_root_path is not null order by hp.f_is_default desc</picsql>
+				 <settingsql>select hs.f_house_sell_id\, hs.f_room_id\,hs.f_setting_code\, hs.f_setting_nums\,  hs.f_category_type  from t_house_setting hs where hs.f_is_delete=0 and hs.f_room_id=0 </settingsql>
+				<batchNum>10000</batchNum>
+			</ds>
+		</item>
+		<item>
+			<name>room</name>
+			<limit_num>4000000</limit_num>
+			<ds_num>1</ds_num>
+			<ds>
+				<name>ds1</name>
+				<dataname>room</dataname>
+				<selectsql>SELECT CONCAT(hd.f_bizname\,'-'\,hd.f_community_name\,'-'\,hd.f_bedroom_nums\,'居'\,CASE r.f_orientations WHEN '10001' THEN '东' WHEN '10002' THEN '西' WHEN '10003' THEN '南' WHEN '10004' THEN '北' WHEN '10023' THEN '西南' WHEN '10024' THEN '西北' WHEN '10014' THEN '东北' WHEN '10013' THEN '东南' WHEN '10034' THEN '南北' WHEN '10012' THEN '东西' ELSE '其他' END\,CASE r.f_room_type WHEN 1 THEN '主卧' WHEN 10 THEN '次卧' WHEN 20 THEN '优化间' WHEN 30 THEN '隔间' ELSE '其他' end) title\, r.id ID\, r.f_status\, r.f_area\, hd.f_area f_house_area\, r.f_room_comment\, r.f_room_type\, CASE r.f_room_type WHEN 1 THEN '主卧' WHEN 10 THEN '次卧' WHEN 20 THEN '优化间' WHEN 30 THEN '隔间' ELSE '其他' END rtName\, r.f_room_use\, CASE r.f_room_use WHEN 1 THEN '居住' WHEN 2 THEN '写字楼' WHEN 3 THEN '商铺' ELSE '其他' END ruName\, r.f_orientations\, CASE r.f_orientations WHEN '10001' THEN '东' WHEN '10002' THEN '西' WHEN '10003' THEN '南' WHEN '10004' THEN '北' WHEN '10023' THEN '西南' WHEN '10024' THEN '西北' WHEN '10014' THEN '东北' WHEN '10013' THEN '东南' WHEN '10034' THEN '南北' WHEN '10012' THEN '东西' ELSE '其他' END r_ori_name\, r.f_can_checkin_date\, IFNULL(r.f_rent_price_month\, 0) f_rent_price_month\, CASE r.f_rent_price_month WHEN 0.0 THEN 0 ELSE 1 END f_rent_price_zero\, IFNULL(r.f_rent_price_day\, 0) f_rent_price_day\, IFNULL(r.f_service_fee\, 0) f_service_fee\, IFNULL(r.f_deposit_fee\, 0) f_deposit_fee\, IFNULL(r.f_deposit_month\, 0) f_deposit_month\, IFNULL(r.f_period_month\, 0) f_period_month\, IFNULL(r.f_decoration\, 0) f_decoration\, CASE r.f_decoration WHEN 1 THEN '精装' WHEN 2 THEN '简装' WHEN 3 THEN '毛坯' WHEN 4 THEN '老旧' WHEN 5 THEN '豪装' WHEN 6 THEN '中装' WHEN 7 THEN '普装' ELSE '其他' END r_dec_name\, IFNULL(r.f_toilet\, 0) f_toilet\, IFNULL(r.f_balcony\, 0) f_balcony\, IFNULL(r.f_insurance\, 0) f_insurance\, r.f_comment\, r.f_room_code\, r.f_room_tag\, r.f_production_name\, r.f_room_name\, r.f_first_pub_date\, r.f_pub_date\, IFNULL(r.f_has_key\, 0) f_has_key\, r.f_creation_date\, r.f_last_change_date\, r.f_house_sell_id\, hd.f_community_name\, hd.f_address\, hd.f_livingroom_nums\, hd.f_bedroom_nums\, CONCAT(hd.f_bedroom_nums\,'居') f_bedroom_nums_name\, hd.f_toilet_nums\, hd.f_flow_no\, hd.f_flow_total\, hd.f_entire_rent\, CASE hd.f_entire_rent WHEN 0 THEN '合租' WHEN 1 THEN '整租' WHEN 2 THEN '整分皆可' ELSE '其他' END rent_name\, hd.f_subway\, hd.f_subway_distance\, hd.f_bus_stations\, hd.f_surround\, hd.f_source\, hd.f_city_id\, hd.f_city\, hd.f_biz_id\, r.f_is_top\, r.f_approve_status\, hd.f_district_id\, hd.f_subway_line_id\, hd.f_subway_station_id\, hd.f_baidu_lo\, hd.f_baidu_la\, CONCAT_WS('\,'\, CAST(IFNULL(hd.f_baidu_lo\, 0.0) AS CHAR)\, CAST(IFNULL(hd.f_baidu_la\, 0.0) AS CHAR)) Google\, hd.f_bizname\, r.f_agency_phone\, hb.f_company_id\, hb.f_company_name\, r.f_is_pay_month\, r.f_pub_type\, r.f_pub_date pubDateStr\, r.f_last_change_date rupdateTimeStr\, r.f_can_checkin_date rCanCheckinDateStr FROM t_room_base r LEFT JOIN t_house_detail hd ON hd.f_house_sell_id = r.f_house_sell_id LEFT JOIN t_house_base hb ON hb.f_house_sell_id = r.f_house_sell_id WHERE r.f_is_delete = 0 </selectsql>
+				<maxidsql>select count(*) FROM t_room_base r  LEFT JOIN  t_house_detail hd ON hd.f_house_sell_id = r.f_house_sell_id LEFT JOIN t_house_base hb ON hb.f_house_sell_id = r.f_house_sell_id WHERE r.f_is_delete = 0 </maxidsql>
+				<picsql>select hp.f_house_sell_id\,hp.f_room_id\, hp.f_pic_root_path\, hp.f_pic_web_path from t_house_pics hp where  hp.f_is_delete=0 and f_pic_root_path is not null order by hp.f_is_default desc</picsql>
+				<settingsql>select hs.f_house_sell_id\, hs.f_room_id\, hs.f_setting_code\, hs.f_setting_nums\,  hs.f_category_type from t_house_setting hs where hs.f_is_delete=0</settingsql>
+				<batchNum>10000</batchNum>
+			</ds>
+		</item>
+	</fullIndex>
+</Config>

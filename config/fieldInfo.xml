@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<house>
+		
+		<field name="ID" boost="1" indexed="1"  analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="id" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_house_sell_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="hsId" multiplesign="" whole="0" >
+		</field>
+		
+			
+		<field name="title" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="title" multiplesign="" whole="0" >
+		</field>
+    <field name="f_is_sale" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="isSale" multiplesign="" whole="0" >
+		</field>
+     <field name="f_status" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="status" multiplesign="" whole="0" >
+		</field>
+		
+		 <field name="f_house_comment" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="houseComment" multiplesign="" whole="0" >
+		</field>
+		 <field name="f_ext400" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="ext400" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_can_checkin_date" boost="1" indexed="1" analyzed="0"  stored="1" datatype="4" multipe="0" indexfield="canCheckinDate" multiplesign="" whole="0" >
+		</field>
+		<field name="f_cc_date_str" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="canCheckinDateStr" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_rent_price_day" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="rentPriceDay" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_rent_price_month"  sort="1" boost="1" indexed="1" analyzed="0"  stored="1" datatype="2" multipe="0" indexfield="rentPriceMonth" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_rent_price_zero" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="rentPriceZero" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_service_fee" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="serviceFee" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_deposit_fee" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="depositFee" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_deposit_month" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="depositMonth" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_period_month" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="periodMonth" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_agency_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="agentId" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_company_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="companyId" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_company_name" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="companyName" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_agency_phone" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="agencyPhone" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_first_pub_date" boost="1" indexed="1" analyzed="0"  stored="1" datatype="4" multipe="0" indexfield="firstPubDate" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_pub_date" boost="1" sort="1" indexed="1" analyzed="0"  stored="1" datatype="4" multipe="0" indexfield="pubDate" multiplesign="" whole="0" >
+		</field>
+		
+	  <field name="f_pub_date_str" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="pubDateStr" multiplesign="" whole="0" >
+		</field>
+		
+		 <field name="f_has_key" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="hasKey" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_creation_date" boost="1" indexed="1" analyzed="0"  stored="1" datatype="4" multipe="0" indexfield="creationDate" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_last_change_date" sort="1" boost="1" indexed="1" analyzed="0"  stored="1" datatype="4" multipe="0" indexfield="updateDate" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_lc_date" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="updateDateStr" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_building_no" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="buildingNo" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_unit_no" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="unitNo" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="f_flow_no" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="flowNo" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_flow_total" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="flowTotal" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_house_no" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="houseNo" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_area" boost="1" sort="1" indexed="1" analyzed="0"  stored="1" datatype="2" multipe="0" indexfield="fArea" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_orientations" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="orientations" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="ori_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="oriName" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_bedroom_nums_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="bedroomNumsName" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_bedroom_nums" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="bedroomNums" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_livingroom_nums" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="livingroomNums" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_kitchen_nums" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="kitchenNums" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_toilet_nums" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="toiletNums" multiplesign="" whole="0" >
+		</field>
+		
+    <field name="f_province" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="province" multiplesign="" whole="0" >
+		</field>
+		
+		 <field name="f_city" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="city" multiplesign="" whole="0" >
+		</field>
+		
+		 <field name="f_house_function" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="houseFunction" multiplesign="" whole="0" >
+		</field>
+	
+	 <field name="fun_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="funName" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_is_top" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="isTop" multiplesign="" whole="0" >
+		</field>
+			
+		<field name="f_approve_status" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="approveStatus" multiplesign="" whole="0" >
+		</field>
+			
+			<field name="f_focus_code" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="focusCode" multiplesign="" whole="0" >
+		</field>
+			
+	   <field name="f_district" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="district" multiplesign="" whole="0" >
+		</field>
+			
+		 <field name="f_bizname" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="bizname" multiplesign="" whole="0" >
+		</field>
+	
+	 <field name="f_address" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="address" multiplesign="" whole="0" >
+		</field>
+			
+		<field name="f_subway" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="subway" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_subway_distance" boost="1" indexed="1" analyzed="0"  stored="1" datatype="2" multipe="0" indexfield="subwayDistance" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_bus_stations" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="busStations" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_surround" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="surround" multiplesign="" whole="0" >
+		</field>
+			
+		<field name="f_community_name" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="communityName" multiplesign="" whole="0" >
+		</field>
+			
+			<field name="f_building_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="buildingName" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_balcony_nums" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="balconyNums" multiplesign="" whole="0" >
+		</field>
+			
+		<field name="f_baidu_lo" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="baiduLo" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_baidu_la" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="baiduLa" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_building_type" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="buildingType" multiplesign="" whole="0" >
+		</field>
+		
+	  <field name="f_toilet" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="ftoilet" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_balcony" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="fbalcony" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_insurance" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="finsurance" multiplesign="" whole="0" >
+		</field>
+	
+	  <field name="f_decoration" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="fdecoration" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="dec_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="decName" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_entire_rent" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="entireRent" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="rent_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rentName" multiplesign="" whole="0" >
+		</field>
+		<field name="f_comment" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="fcomment" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_house_tag" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="1" indexfield="housedTag" multiplesign="," whole="0" >
+		</field>
+		
+		<field name="f_source" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="fsource" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_house_type" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="houseType" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="f_city_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="cityId" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_district_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="districtId" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="f_biz_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="bizId" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="f_subway_line_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="1" indexfield="subwayLineId" multiplesign="," whole="0" >
+		</field>
+		
+		<field name="f_subway_station_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="1" indexfield="subwayStationId" multiplesign="," whole="0" >
+		</field>
+		
+		<field name="f_is_pay_month" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="isPayMonth" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="f_pub_type" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="pubType" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="Google" boost="1" indexed="1" analyzed="0"  stored="1" datatype="3" multipe="0" indexfield="google" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_building_year" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="buildingYear" multiplesign="" whole="0" >
+		</field>
+		
+		
+		
+		<field name="f_pic_root_path"  extend="1" boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_pic_root_path" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_pic_web_path"  extend="1"   boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_pic_web_path" multiplesign="" whole="0" >
+		</field>
+
+		<field name="f_setting_code"  extend="1" boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_setting_code" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_setting_nums"  extend="1" boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_setting_nums" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_category_type"  extend="1" boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_category_type" multiplesign="" whole="0" >
+		</field>
+		
+		
+		
+		
+	</house>
+	
+	<room>
+		
+		  <field name="f_house_sell_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="hsId" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="ID" boost="1" indexed="1"  analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="roomId" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="title" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="title" multiplesign="" whole="0" >
+		</field>
+    
+    <field name="f_status" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rStatus" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_area" boost="1"  sort="1" indexed="1" analyzed="0"  stored="1" datatype="2" multipe="0" indexfield="rArea" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_house_area" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rHouseArea" multiplesign="" whole="0" >
+		</field>
+		 
+		 <field name="f_room_comment" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="roomcomment" multiplesign="" whole="0" >
+		</field>
+		
+		 <field name="f_room_type" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="roomType" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="rtName" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rtName" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_room_use" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="roomuse" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="ruName" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="ruName" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="f_orientations" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="roomori" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="r_ori_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="roriName" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_can_checkin_date" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rCanCheckinDate" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_rent_price_month" boost="1" sort="1" indexed="1" analyzed="0"  stored="1" datatype="2" multipe="0" indexfield="rRentPriceMonth" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_rent_price_zero" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rRentPriceZero" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_rent_price_day" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rRentPriceDay" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_service_fee" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="f_service_fee" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_deposit_fee" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rDepositFee" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_deposit_month" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rDepositMonth" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_period_month" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rPeriodMonth" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_decoration" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rdecoration" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="r_dec_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rDecName" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_toilet" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rtoilet" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_balcony" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rbalcony" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_insurance" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rinsurance" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_comment" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rcomment" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_room_code" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="roomcode" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_room_tag" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="1" indexfield="roomtag" multiplesign="," whole="0" >
+		</field>
+		
+		
+		<field name="f_production_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rproname" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_room_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="roomname" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_pub_date" boost="1" sort="1" indexed="1" analyzed="0"  stored="1" datatype="4" multipe="0" indexfield="rpubdate" multiplesign="" whole="0" >
+		</field>
+		
+		
+		<field name="f_has_key" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rhaskey" multiplesign="" whole="0" >
+		</field>
+		
+			<field name="f_creation_date" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rcreationDate" multiplesign="" whole="0" >
+		</field>
+	
+		<field name="f_last_change_date" boost="1"  sort="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rupdateTime" multiplesign="" whole="0" >
+		</field>
+	
+	  
+		
+		   <field name="f_community_name" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="communityName" multiplesign="" whole="0" >
+		</field>
+		
+		  <field name="f_address" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="address" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_livingroom_nums" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="livingroomNums" multiplesign="" whole="0" >
+		</field>
+	
+		 <field name="f_bedroom_nums" boost="1" indexed="1" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="bedroomNums" multiplesign="" whole="0" >
+		</field>
+		
+		
+		 <field name="f_toilet_nums" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="toiletNums" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_flow_no" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="flowNo" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_flow_total" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="flowTotal" multiplesign="" whole="0" >
+			</field>
+	
+	  <field name="f_entire_rent" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="entireRent" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="rent_name" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rentName" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_subway" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="subway" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_subway_distance" boost="1" indexed="1" analyzed="0"  stored="1" datatype="2" multipe="0" indexfield="subwayDistance" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_bus_stations" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="busStations" multiplesign="" whole="0" >
+		</field>
+	
+	 	<field name="f_surround" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="surround" multiplesign="" whole="0" >
+		</field>
+	
+	  <field name="f_source" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="source" multiplesign="" whole="0" >
+		</field>
+	
+		
+		<field name="f_city_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="cityId" multiplesign="" whole="0" >
+		</field>
+	   	
+	  <field name="f_city" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="city" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_biz_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="bizId" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_is_top" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="risTop" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_approve_status" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rapproveStatus" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_district_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="districtId" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_subway_line_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="1" indexfield="subwayLineId" multiplesign="," whole="0" >
+		</field>
+		
+		<field name="f_subway_station_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="1" indexfield="subwayStationId" multiplesign="," whole="0" >
+		</field>
+		
+		<field name="Google" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="google" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_bizname" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="bizname" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="pubDateStr" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="pubDateStr" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="rupdateTimeStr" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rupdateTimeStr" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="rCanCheckinDateStr" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rCanCheckinDateStr" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_agency_phone" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="agencyPhone" multiplesign="" whole="0" >
+		</field>
+		
+     <field name="f_company_id" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="companyId" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_company_name" boost="1" indexed="1" analyzed="1"  stored="1" datatype="0" multipe="0" indexfield="companyName" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_baidu_lo" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="baiduLo" multiplesign="" whole="0" >
+		</field>
+	   	
+	  <field name="f_baidu_la" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="baiduLa" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_is_pay_month" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="risPayMonth" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_pub_type" boost="1" indexed="1" analyzed="0"  stored="1" datatype="0" multipe="0" indexfield="rpubType" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_pic_root_path"  extend="1"   boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_pic_root_path" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_pic_web_path"  extend="1"   boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_pic_web_path" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_setting_code"  extend="1" boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_setting_code" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_setting_nums"  extend="1" boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_setting_nums" multiplesign="" whole="0" >
+		</field>
+		
+		<field name="f_category_type"  extend="1" boost="1" indexed="0" analyzed="0"  stored="1" datatype="1" multipe="0" indexfield="f_category_type" multiplesign="" whole="0" >
+		</field>
+		
+		
+		
+	</room>
+	
+</config>
